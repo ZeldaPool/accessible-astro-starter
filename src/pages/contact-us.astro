@@ -1,0 +1,96 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import { Icon } from 'astro-icon/components'
+import {
+  Accordion,
+  AccordionItem,
+  Breadcrumbs,
+  BreadcrumbsItem,
+  Card,
+  Media,
+  Modal,
+  Notification,
+  Pagination,
+} from 'accessible-astro-components'
+---
+
+<DefaultLayout title="Contact Us">
+  <section class="my-12">
+    <div class="space-content container">
+      <h1>Contact Us</h1>
+      <p class="text-2xl">Inquire about our LED Solutions today</p>
+    </div>
+  </section>
+  <section class="mb-12 mt-32">
+    <div class="container">
+      <div class="grid grid-cols-1 gap-32 md:grid-cols-2">
+        <div class="space-content">
+          <p><strong>Contact Person:</strong> Trushar Rana</p>
+          <p>
+            <strong>Address:</strong> Ganesh Electricals, 7 Haribhakti Estate, Near Yamuna Mill, Dabhoi Road, Vadodara -
+            390004. Gujarat, India
+          </p>
+          <p><strong>Mobile Number:</strong> +91-98251-25196</p>
+          <p><strong>Email:</strong><a href="mailto:ganeshled@gmail.com">ganeshled@gmail.com</a></p>
+          <p><strong>Telephone Number:</strong> +91-265-2582295</p>
+          <p><strong>Fax Number:</strong> +91-265-2582295</p>
+          <h2>Hours of Operation</h2>
+          <p><strong>Monday - Saturday: 9:00 a.m. - 5:30 p.m.</strong></p>
+        </div>
+        <div class="space-content">
+          <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
+            <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+              <iframe
+                style="height:100%;width:100%;border:0;"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=ganesh+electricals+7+haribhakti+estate+vadodara&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
+            </div><a class="google-map-code-enabler" href="https://kbj9qpmy.com/bp" id="inject-map-data"
+              >Broadband Providers</a
+            ><style>
+              #embedded-map-display img {
+                max-width: none !important;
+                background: none !important;
+                font-size: inherit;
+                font-weight: inherit;
+              }
+            </style>
+          </div>
+        </div>
+        <!-- <div class="space-content">
+          <h3>Contact Form Coming Soon</h3>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- <section class="mb-12 mt-32">
+    <div class="container">
+      <div class="grid grid-cols-1 gap-32 md:grid-cols-2">
+        <div class="space-content">
+          <h2>Hours of Operation</h2>
+          <p><strong>Monday - Saturday: 9:00 a.m. - 5:30 p.m.</strong></p>
+        </div>
+        <div class="space-content">
+          <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
+            <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+              <iframe
+                style="height:100%;width:100%;border:0;"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=ganesh+electricals+7+haribhakti+estate+vadodara&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
+            </div><a class="google-map-code-enabler" href="https://kbj9qpmy.com/bp" id="inject-map-data"
+              >Broadband Providers</a
+            ><style>
+              #embedded-map-display img {
+                max-width: none !important;
+                background: none !important;
+                font-size: inherit;
+                font-weight: inherit;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+</DefaultLayout>

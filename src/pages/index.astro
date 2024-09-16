@@ -4,69 +4,85 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
+
+import { Icon } from 'astro-icon/components'
 ---
 
 <DefaultLayout title="Home">
   <Hero />
+  <ContentMedia imgSrc="/feature-1.webp">
+    <h2>Illuminating the Skies and Streets</h2>
+    <p class="text-1xl">
+      Ganesh Electricals is a leading provider of cutting-edge LED lighting solutions tailored for aviation and traffic
+      industries. With a proven track record spanning over 14 years, we've established ourselves as a trusted partner in
+      delivering reliable and efficient lighting products. Our commitment to excellence ensures that our aviation
+      obstruction lights, traffic signals, and warning lamps meet the highest industry standards.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="/feature-2.webp" reverseImg={true}>
+    <h2>Precision Engineering for Safety and Efficiency</h2>
+    <p class="text-1xl">
+      Our expertise lies in crafting innovative LED-based products that enhance safety and visibility across diverse
+      environments. From towering aviation structures to bustling roadways, our solutions are designed to withstand
+      rigorous conditions while delivering exceptional performance. Backed by our deep industry knowledge, we offer a
+      comprehensive range of products, including solar-powered options, to cater to various project requirements.
+    </p>
+    <p>Explore our range of LED solutions today!</p>
+  </ContentMedia>
   <section class="my-64">
     <div class="container">
       <h2 class="mb-16 text-6xl">Features</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:tailwind" title="Tailwind CSS">
-          Use the power of Tailwind to greatly improve your productivity and enhance your developer workflow.
+        <Feature icon="mdi:led-on" title="Innovative LED Solutions">
+          Discover our cutting-edge LED technology for a wide range of applications, from aviation to urban
+          infrastructure.
         </Feature>
-        <Feature icon="mdi:wheelchair-accessibility" title="a11y Components">
-          17 components and counting, all tried and tested for the most optimal accessible experience for your visitors.
+        <Feature icon="mdi:solar-energy-outline" title="Energy Efficiency and Sustainability">
+          Reduce your energy consumption and environmental impact with our energy-efficient LED solutions.
         </Feature>
-        <Feature icon="mdi:looks" title="Prettier">
-          Less worry about formatting your code, let the Astro Prettier integration do the heavy lifting.
+        <Feature icon="mdi:wrench-settings" title="Custom LED Products">
+          Need a unique LED solution? Our team can design and manufacture custom products to meet your exact
+          requirements.
         </Feature>
-        <Feature icon="mdi:eslint" title="ESLint">
-          Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
+        <Feature icon="mdi:diamond-stone" title="Reliable and Durable">
+          Our LED products are built to last, ensuring long-term performance and reliability.
         </Feature>
-        <Feature icon="mdi:book-open-page-variant" title="Blog">
-          This theme comes with a fully integrated blog, dynamic pages and SEO optimization.
+        <Feature icon="mdi:partnership" title="Your Trusted Partner">
+          We strive to respond to your inquiries promptly, ensuring you receive the assistance you need when you need
+          it.
         </Feature>
-        <Feature icon="mdi:language-markdown" title="Markdown & MDX">
-          Easily use .md and .mdx pages to build your websites or use it with Netlify CMS.
-        </Feature>
-        <Feature icon="mdi:theme-light-dark" title="Dark mode">
-          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
-        </Feature>
-        <Feature icon="mdi:cog" title="Design System">
-          The theme offers some very handy utilities to help you build your website faster.
-        </Feature>
-        <Feature icon="mdi:lighthouse" title="Lighthouse Scores">
-          Excellent lighthouse scores means your website will load faster and get better SEO rankings.
+        <Feature icon="mdi:ab-testing" title="Quality You Can Trust">
+          Each product undergoes rigorous testing to meet or exceed industry standards and guarantee reliability.
         </Feature>
       </div>
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible Components</h2>
-    <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
-        >separate package</a
-      >. They'll get you up and running in building an accessible solution for your visitors.
-    </p>
-  </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <h2>WCAG 2.1 AA Compliant</h2>
-    <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
-    </p>
-  </ContentMedia>
   <section class="mb-32 mt-64">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Counters</h2>
+      <h2 class="mb-16 text-6xl">Our Clients</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="520" title="Stars" sub="On GitHub" />
-        <Counter count="17" title="Accessible" sub="Components" />
-        <Counter count="500" title="Commits" sub="Merged" />
-        <Counter count="18+" title="Months" sub="Since launch" />
+        <Counter title="Airtel" />
+        <Counter title="Tata" />
+        <Counter title="Doordarshan" />
+        <Counter title="VI" />
+      </div>
+      <br />
+      <br />
+      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
+        <Counter title="AAI" />
+        <Counter title="Akashwani" />
+        <Counter title="MGVCL" />
+        <Counter title="GNFC" />
+        <!-- <Counter count="18+" title="Months" sub="Since launch" /> -->
+      </div>
+      <br />
+      <br />
+      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
+        <Counter title="Indian Railways" />
+        <Counter count="and" />
+        <Counter count="many" />
+        <Counter count="more" />
+        <!-- <Counter count="18+" title="Months" sub="Since launch" /> -->
       </div>
     </div>
   </section>
